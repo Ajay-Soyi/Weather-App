@@ -1,0 +1,62 @@
+body {
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+header {
+  height: 20%;
+  background-color: rgb(44, 62, 80);
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  gap: 20px;
+}
+
+main {
+  height: 80%;
+  background-color: rgb(1, 22, 30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  width: 30%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  color: white;
+}
+
+button {
+  height: 32px;
+  width: 80px;
+  background-color: #44ad96;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.weather-container {
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+img{
+    height: 100px;
+}
