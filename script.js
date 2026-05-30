@@ -18,23 +18,23 @@ const elementCreation = (temp, location, date, time, imgIcon, weatherText) => {
   spanLocation.textContent = `
     ${location}
   `;
-    dateTime.textContent = `
+  dateTime.textContent = `
     ${time} ${date}
   `;
-  weatherContainer.append(img,weatherInfo,spanTemp,spanLocation,dateTime);
+  weatherContainer.append(img, weatherInfo, spanTemp, spanLocation, dateTime);
 };
 
 const updateDom = (data) => {
-    if(weatherContainer.hasChildNodes){
-        weatherContainer.replaceChildren();
-    }
-    const temp = data.current.temp_c;
-    const location = data.location.name;
-    const [date, time] = data.location.localtime.split(" ");
-    console.log
-    const imgIcon = data.current.condition.icon;
-    const weatherText = data.current.condition.text;
-    elementCreation(temp, location, date, time, imgIcon, weatherText);
+  if (weatherContainer.hasChildNodes) {
+    weatherContainer.replaceChildren();
+  }
+  const temp = data.current.temp_c;
+  const location = data.location.name;
+  const [date, time] = data.location.localtime.split(" ");
+  console.log;
+  const imgIcon = data.current.condition.icon;
+  const weatherText = data.current.condition.text;
+  elementCreation(temp, location, date, time, imgIcon, weatherText);
 };
 
 const weatherInput = async () => {
@@ -42,7 +42,7 @@ const weatherInput = async () => {
   const location = input.value.trim();
   if (location) {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=0bc40fe4d4ac48f18a192003262905&q=${location}&aqi=no`,
+      `https://api.weatherapi.com/v1/current.json?key=0bc40fe4d4ac48f18a192003262905&q=${location}&aqi=no`,
     );
     if (response.status === 200) {
       const data = await response.json();
