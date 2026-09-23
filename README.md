@@ -25,7 +25,7 @@ Enter a location to get the current weather information for that place.
 
 ## 🔗 Links
 
-[Repository](https://github.com/Ajay-Soyi/Weather-App) • [Live Demo](#)
+[Repository](https://github.com/Ajay-Soyi/Weather-App) • [Live Demo](https://weather-app-alpha-olive-99.vercel.app/)
 
 ## 📸 How It Works
 
