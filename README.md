@@ -1,18 +1,17 @@
 # Weather App
 
-A simple weather application built with **HTML, CSS, and Vanilla JavaScript**.
+A weather application built with **HTML, CSS, and Vanilla JavaScript** that displays current weather information for a searched location.
 
-Enter a location to get the current weather information for that place.
+🔗 **[Live Demo](https://weather-app-alpha-olive-99.vercel.app/)**
 
 ## 🚀 Features
 
 * Search weather by location
 * Displays current temperature in °C
-* Shows weather condition
-* Displays weather condition icon
-* Shows location name
+* Shows weather condition and icon
+* Displays location name
 * Displays local date and time
-* Updates the page dynamically without refreshing
+* Updates weather information dynamically without refreshing the page
 
 ## 🛠️ Built With
 
@@ -23,28 +22,21 @@ Enter a location to get the current weather information for that place.
 * Fetch API
 * WeatherAPI
 
-## 🔗 Links
-
-[Repository](https://github.com/Ajay-Soyi/Weather-App) • [Live Demo](https://weather-app-alpha-olive-99.vercel.app/)
-
-## 📸 How It Works
+## ⚙️ How It Works
 
 1. Enter a location in the search box.
 2. Click **Search**.
-3. The application sends a request to the WeatherAPI.
-4. The returned weather data is processed using JavaScript.
+3. The application sends a request to WeatherAPI.
+4. The returned JSON data is processed using JavaScript.
 5. The weather information is dynamically displayed on the page.
 
 ## 🧠 What I Practiced
 
-This project helped me practice:
-
-* Working with APIs
+* Working with external APIs
 * Using `fetch()` and `async/await`
 * Handling JSON responses
 * DOM manipulation
-* Creating elements dynamically
-* Updating existing DOM elements
+* Creating and updating DOM elements
 * Using `textContent`
 * Reading values from form inputs
 * Using JavaScript template literals
@@ -64,5 +56,3 @@ Weather-App/
 ## 👨‍💻 Author
 
 **Ajay Soyi**
-
-Built as part of my JavaScript and web development practice.
